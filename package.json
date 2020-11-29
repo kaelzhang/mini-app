@@ -2,7 +2,7 @@
   "name": "mini-app",
   "version": "1.0.0",
   "description": "A mini-program framework",
-  "main": "src/index.js",
+  "main": "app/src/index.js",
   "scripts": {
     "test": "NODE_DEBUG=mini-app nyc ava --timeout=10s --verbose",
     "test:dev": "NODE_DEBUG=mini-app nyc ava --timeout=10s --verbose && npm run report:dev",
@@ -14,7 +14,7 @@
     "report:open": "open coverage/index.html"
   },
   "files": [
-    "src/"
+    "app/src/"
   ],
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   },
   "ava": {
     "files": [
-      "test/*.test.js"
+      "app/test/*.test.js"
     ]
   },
   "author": "kaelzhang",
